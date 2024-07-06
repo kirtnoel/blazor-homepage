@@ -1,0 +1,55 @@
+﻿
+- 
+  Label: Visual Studio 2022, Visual Studio Code
+  Years: 6
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+- 
+  Label: Entity Framework
+  Years: 2
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiaire
+- 
+  Label: MSTest, xUnit
+  Years: 5
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiare
+-
+  Label: AutoFixture, NSubstitute, Moq
+  Years: 5
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiare
+-
+  Label: git, GitHub
+  Years: 5
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+-
+  Label: SQL Server Management Studio (SSMS)
+  Years: 6
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiare
+-
+  Label: SQL Server Data Tools (SSDT)
+  Years: 4
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiare
+-
+  Label: Rabbit MQ
+  Years: 2
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiare
+-
+  Label: Postman
+  Years: 1
+  Rating: 
+    En: Novice
+    Fr: Débutant

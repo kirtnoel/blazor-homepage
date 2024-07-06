@@ -1,0 +1,85 @@
+﻿@page "/workroledetail"
+@inject Language _language
+
+
+    <ul>
+        <li>
+            Date: @(Role.StartDate + " - " + Role.EndDate)
+        </li>
+        @if (Role.Employer != null)
+        {
+        <li> @OrganizationLabel: @Role.Employer </li>
+        }
+        @if (Role.Title != null)
+        {
+            <li>@TitleLabel: @Role.Title</li>
+        }
+        @if(Role.Mandate != null)
+        {
+            <li> @MandateLabel: @Role.Mandate </li>
+        }
+        @if (Role.Team != null)
+        {
+            <li> @TeamLabel: @Role.Team </li>
+        }
+        <li> @LocationLabel: @Role.Location </li>
+        @if ( @Role.Description != null)
+        {
+            <li> @DescLabel: @Role.Description </li>
+        }
+        @if (Role.Activities.Any())
+        {
+            <li>@ActivitiesLabel:</li>
+
+            <IEnumerableAsHtmlUnorderedList List=@Role.Activities />
+        }
+    </ul>
+
+
+@code{
+
+    [Parameter]
+    public WorkRoleInterpretor Role { get; set; } 
+
+    public string OrganizationLabel { get; set; }
+    public string TitleLabel { get; set; }
+    public string TeamLabel { get; set; }
+    public string DescriptionLabel { get; set; }
+    public string StartDateLabel { get; set; }
+    public string EndDateLabel { get; set; }
+    public string LocationLabel { get; set; }
+    public string ActivitiesLabel { get; set; }
+    public string DescLabel { get; set; }
+    public string MandateLabel { get; set; }
+
+    protected override void OnInitialized()
+    {
+
+        if (_language.Current == Constants.French)
+        {
+            OrganizationLabel = "Employeur";
+            TitleLabel = "Titre";
+            TeamLabel = "Équipe";
+            LocationLabel = "Location";
+            StartDateLabel = "Date début";
+            EndDateLabel = "Date fin";
+            ActivitiesLabel = "Activités";
+            DescLabel = "Description";
+            MandateLabel = "Mandat";
+        }
+        else
+        {
+            OrganizationLabel = "Employer";
+            TitleLabel = "Title";
+            TeamLabel = "Team";
+            LocationLabel = "Location";
+            StartDateLabel = "Start Date";
+            EndDateLabel = "End Date";
+            ActivitiesLabel = "Activities";
+            DescLabel = "Description";
+            MandateLabel = "Mandate";
+        }
+
+    }
+
+}

@@ -1,0 +1,36 @@
+﻿@page "/workroleactivitiesinaccordion"
+@inject Language _language
+
+
+<div @attributes=ActivitiesAccordion.AccordionAttributes>
+    <div class="accordion-item common-bg-color">
+        <h2 @attributes=ActivitiesAccordion.HeaderAttributes>
+            <button @attributes=ActivitiesAccordion.ButtonAttributes>
+                @_accordionLabel
+            </button>
+        </h2>
+        <div @attributes=ActivitiesAccordion.DivAttributues>
+            <div @attributes=ActivitiesAccordion.BodyAttributes>
+                <IEnumerableAsHtmlUnorderedList List=@Activities />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code
+{
+
+    [Parameter]
+    public List<string>? Activities { get; set; } 
+
+    public Accordion ActivitiesAccordion = new Accordion(Guid.NewGuid().ToString());
+
+    private string _accordionLabel;
+
+    protected override void OnInitialized()
+    {
+        _accordionLabel = (_language.Current == Constants.French) ? "Liste détaillée des activités" : "Detailed Activities List";
+    }
+}

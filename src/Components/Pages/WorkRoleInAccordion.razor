@@ -1,0 +1,43 @@
+﻿@page "/workroleinaccordion"
+@inject Language _language
+
+@foreach(var (role, htmlAtt) in Zipped)
+{
+    <div @attributes=htmlAtt.AccordionAttributes>
+        <div class="accordion-item common-bg-color">
+            <h2 @attributes=htmlAtt.HeaderAttributes>
+                <button @attributes=htmlAtt.ButtonAttributes>
+                    @role.Mandate  @role.StartDate - @role.EndDate
+                </button>
+            </h2>
+            <div @attributes=htmlAtt.DivAttributues>
+                <div class="accordion-body">
+                    <WorkRoleDetail Role=@role />
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@code
+{
+
+    [Parameter]
+    public List<WorkRoleInterpretor>? Roles { get; set; } = new List<WorkRoleInterpretor>();
+
+    public List<Accordion> AccordionList = new List<Accordion>();
+    IEnumerable<(WorkRoleInterpretor, Accordion)>? Zipped;
+
+    protected override void OnInitialized()
+    {
+        foreach(var role in Roles)
+        {
+            AccordionList.Add(new Accordion( role.Id ));
+        }
+
+        Zipped = Roles.Zip(AccordionList, (role, htmlAtt) => (role, htmlAtt));
+
+    }
+
+}

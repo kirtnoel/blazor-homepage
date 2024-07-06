@@ -1,0 +1,27 @@
+﻿@page "/ienumerableashtmlunorderedlist"
+@inject Language _language
+
+<section>
+
+    <ul>
+        @if (List.Any())
+            @foreach(var entry in List)
+            {
+                <li> @entry </li>
+            }
+    </ul>
+
+</section>
+<hr />
+
+
+@code{
+
+    [Parameter]
+    public List<string>? List { get; set; }
+
+    protected override void OnInitialized()
+    {
+    }
+
+}

@@ -1,0 +1,77 @@
+﻿-
+#  Title: 
+#    En: Web Application Developer
+#    Fr: Développeur d'Applications Web
+#  Organization: 
+#    En: Bell Business Markets
+#    Fr: Bell Marché Affaires
+  Id: BBM-PSG
+  Mandate:
+    En: Bell Public Service Group
+    Fr: Groupe de Service Publique chez Bell
+  Location: 
+    En: Ottawa, Ontario (remote)
+    Fr: Ottawa, Ontario (télétravail)
+  StartDate: "2020-12-01"
+  EndDate: "2023-03-01"
+  Description:
+    En: "The Bell Public Service Group is updating their emergency dispatch system to support Next Generation 911 (NG911) - a standard designed to improve inter-agency data sharing and standardize the distribution of multimedia content to emergency responders."
+    Fr: "Le groupe Bell Sécurité publique met à jour son système de répartition d'urgence pour prendre en charge la prochaine génération 911 (NG911) - une norme visant à améliorer le partage de données entre les agences et à normaliser la distribution de contenu multimédia aux intervenants d'urgence."
+  Activities:
+    - 
+      En: "Develop in the .NET core environment using Visual Studio 2019, 2022"
+      Fr: "Développer dans l'environnement de NET core avec Visual Studio 2019, 2022"
+    - 
+      En: "Adhere to the Dependency Injection (DI) software design pattern for inversion of control (IOC)"
+      Fr: "Adhérer au modèle de conception du logiciel d'injection de dépendance (DI) pour l'inversion de contrôle (IOC)"
+    - 
+      En: "Perform Test Driven Development (TDD) to foster testable code"
+      Fr: "Effectuer un développement piloté par les tests pour favoriser du code testable"
+    - 
+      En: "Use Git to manage source code using the feature branch workflow"
+      Fr: "Utiliser Git pour le contrôle de source avec le workflow de branche de fonctionnalité"
+    - 
+      En: "Write automated integration and unit tests with the xUnit framemwork"
+      Fr: "Rédiger des tests unitaires et d'intégration automatisés avec le framework xUnit"
+    - 
+      En: "Design database schema adapted to sustain an evolving Next Generation 911 (NG911) standard"
+      Fr: "Concevoir un schéma de base de données adapté à l'évolution de la norme Next Generation 911 (NG911)"
+    - 
+      En: "Use Entity Framework Core to support various databases - SQL Server, PostgreSQL and Sqlite"
+      Fr: "Utiliser Entity Framework Core pour favoriser une application qui fonctionne avec diverses BD - SQL Server, PostgreSQL et Sqlite"
+    - 
+      En: "Perform database migrations with Entity Framework Core"
+      Fr: "Effectuer des migrations de base de données avec Entity Framework"
+    - 
+      En: "Use Rabbit MQ to integrate with ancillary systems and transmit to centralized logging solutions"
+      Fr: "Utiliser Rabbit MQ pour intégrer des systèmes auxiliaires et transmettre à des solutions de journalisation centralisées"
+    - 
+      En: "Use Mediatr to implement an event-driven design and segregate command and query responsibilities"
+      Fr: "Utiliser Mediatr pour la conception basée sur les événements et la séparation des responsabilités des requêtes de commande"
+    - 
+      En: "Leverage geographic information system (GIS) libraries to evalute location data"
+      Fr: "Se servir des bibliothèques du système d'information géographique pour évaluer les données de localisation"
+    - 
+      En: "Perform code reviews to offer constructive and collaborative feedback"
+      Fr: "Effectuer des revues de code pour offrir des commentaires constructifs et collaboratifs"
+    - 
+      En: "Create and manage security certificates to configure secure communication"
+      Fr: "Créer et gérer des certificats de sécurité pour configurer une communication sécurisée"
+    - 
+      En: "Participate in daily scrums and sprint planning sessions"
+      Fr: "Participer aux scrums quotidiens et aux séances de planification de sprint"
+    -
+      En: "Manage tasks and pipelines with Azure DevOps"
+      Fr: "Gérer les tâches et les pipelines avec Azure DevOps"
+    -
+      En: "Investigate and identify bugs in the software application and suggest solutions"
+      Fr: "Enquêter et identifier les bogues dans les applications logicielles et suggérer des solutions"
+    - 
+      En: "Create build pipeline for in-house NuGet packages"
+      Fr: "Créer des pipelines de build pour les paquets NuGet internes"
+    -
+      En: "Develop a release pipeline to stage application artifacts to multiple internal test environments"
+      Fr: "Développer un pipeline de release pour organiser les artefacts d'application dans plusieurs environnements de test internes"
+    -
+      En: "Participate in weekly National Emergency Number Association (NENA) working group meetings"
+      Fr: "Participer aux réunions hebdomadaires du groupe de travail de la National Emergency Number Association (NENA)"

@@ -1,0 +1,51 @@
+@page "/programming"
+@inject Language _language
+
+<div class="row mt-5">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@ProgrammingLanguageHeader</th>
+            <th>@YearsExperienceHeader</th>
+            <th>@CompetencyHeader</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var i in programmingLanguages?.OrderBy(c => c.Rating.En).ThenByDescending(e => e.Years).ThenBy(s => s.Label))
+{
+    <tr>
+        <td>@i.Label </td>
+        <td>@i.Years </td>
+        <td>@(_language.Current == Constants.English ? @i.Rating.En : @i.Rating.Fr)</td>
+    </tr>
+}
+    </tbody>
+</table>
+</div>
+
+
+@code{
+
+    private List<SkillSet>? programmingLanguages = new List<SkillSet>();
+    public required string ProgrammingLanguageHeader { get; set; }
+    public required string YearsExperienceHeader { get; set; }
+    public required string CompetencyHeader { get; set; }
+    protected override void OnInitialized()
+    {
+        var yamlDeserializer = new YamlDeserializer();
+        programmingLanguages = yamlDeserializer.GetTechSkills();
+        if (_language.Current == Constants.French)
+        {
+            ProgrammingLanguageHeader = "Langages de programmation";
+            YearsExperienceHeader = Constants.YearsExperienceHeaderFrench;
+            CompetencyHeader = Constants.CompetencyHeaderFrench;
+        }
+        else
+        {
+            ProgrammingLanguageHeader = "Programming Language";
+            YearsExperienceHeader = Constants.YearsExperienceHeaderEnglish;
+            CompetencyHeader = Constants.CompetencyHeaderEnglish;
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+﻿-
+  #Title: 
+  #  En: Application Developer
+  #  Fr: Développeur d'Applications
+  # Organization: 
+  #  En: Bell Business Markets
+  #  Fr: Bell Marché Affaires
+  Id: BBM-CHUQ
+  Mandate:
+    En: DCI Cristal-Net, CHUQ
+    Fr: DCI Cristal-Net, CHU de Québec-Université Laval
+  Team:
+    En: Architecture
+    Fr: Architecture
+  Location: 
+    En: Québec, Québec
+    Fr: Québec, Québec
+  StartDate: "2019-07-01"
+  EndDate: "2020-11-01"
+  Description:
+    En: "Work with the CDO team to continue the development of the CristalNet application which manages computerized clinical records and activities, handles data queries, and integrates with the Quebec Health File (DSQ)."
+    Fr: "Travailler avec l’équipe du CDO pour poursuivre le développement l'application CristalNet qui gère des dossiers cliniques informatisés et leurs activités correspondantes, traite des requêtes de données et s'intègre avec la Dossier Santé Québec (DSQ)."
+  Activities:
+    - 
+      En: "Practice Test Driven Development"
+      Fr: "Practiquer le développement piloté par les tests (Test Driven Development)"
+    - 
+      En: "Participate in daily scrums"
+      Fr: "Participer à des scrums quotidiennes"
+    - 
+      En: "Manage tasks and pipelines with Azure DevOps"
+      Fr: "Gérer les tâches et les pipelines avec Azure DevOps"
+    - 
+      En: "Use SQL Server Data Tools (SSDT) to compare and align database environments"
+      Fr: "Comparer les schémas de base de données avec SSDT pour aligner les environnements de développement"
+    - 
+      En: "Develop a C# library to maps application objects to FHIR STU3 and R4."
+      Fr: "Développer une bibliothèque C# pour mapper des objets d'application normalisés dans FHIR STU3 et R4."
+    - 
+      En: "Review and modify javascript code to facilitate a transition from Internet Explorer to Google Chrome."
+      Fr: "Modifier code JavaScript pour prendre en charge une transition du navigateur Internet Explorer au navigateur Chrome."
+    - 
+      En: "Champion adoption of advanced features in C# FHIR library to improve interoperability."
+      Fr: "Préconiser et démontrer les avantages du respect de la norme FHIR au profit de l'interopérabilité."
+    - 
+      En: "Review the mapping of application data models into database schemas"
+      Fr: "Participer à l'examen des propositions de modélisation des objets d'application dans les tables de base de données."
+    - 
+      En: "Collaborate on enacting security measures in application code."
+      Fr: "Collaborer au renforcement de la sécurité."
+    - 
+      En: "Analyse and document difference approaches to enforcing CORS policies"
+      Fr: "Analyser et documenter différentes approches pour CORS."
+    - 
+      En: "Implement a CORS policy using Microsoft .NET library to create customized attributes."
+      Fr: "Mettre en œuvre une politique CORS à l'aide d'une bibliothèque .NET et des attributs personnalisés."
+    - 
+      En: "Review existing encryption protocols and present strategies for transitioning to improved encryption methods"
+      Fr: "Examiner les protocoles de chiffrement existants et présenter des stratégies de transition vers des méthodes de cryptage améliorées"
+    - 
+      En: "Use the .NET Framework crytography library to implement a common process for symmetric data encryption and decryption"
+      Fr: "Utiliser la librairie Cryptographie dans le .NET Framework pour implémenter un processus commun qui crypte et décrytes les données"

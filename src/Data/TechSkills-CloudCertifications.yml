@@ -1,0 +1,38 @@
+﻿
+- 
+  Title:
+    En: Microsoft Certified Azure DevOps Engineer Expert
+    Fr: Ingénieur expert Azure DevOps certifié par Microsoft
+  Years: 2
+  CertificationDate: "2022-02-01"
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiaire
+- 
+  Title:
+    En: Microsoft Certified Azure Developer Associate
+    Fr: Développeur associé Azure certifié par Microsoft
+  Years: 3
+  CertificationDate: "2020-09-01"
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiaire
+- 
+  Title:
+    En: Microsoft Certified Azure Fundamentals
+    Fr: Fondamentaux Azure certifié par Microsoft
+  Years: 3
+  CertificationDate: "2020-05-01"
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+-
+  Title:
+    En: AWS Certified Cloud Practitioner
+    Fr: Praticien du Cloud certifié par AWS
+  Years: 1
+  CertificationDate: "2022-02-01"
+  Rating: 
+    En: Novice
+    Fr: Débutant
+

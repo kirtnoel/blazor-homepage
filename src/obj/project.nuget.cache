@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jykr9IQWO7EeHBzGMCJ6JxINa3ZUdPz8dG00Xz2r6aLtE5A2v00l7Ba2Y9u03XOBhpcbagzDKD3bQauBPr59bA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kirt.noel\\source\\repos\\blazor-homepage\\src\\BlazorWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kirt.noel\\.nuget\\packages\\yamldotnet\\15.1.2\\yamldotnet.15.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

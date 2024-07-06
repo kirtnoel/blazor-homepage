@@ -1,0 +1,99 @@
+﻿@page "/workexperience"
+@inject Language _language;
+@inject YamlDeserializer _yamlDeserializer;
+
+
+<PageTitle>@_pageTitle</PageTitle>
+
+<h2>@_pageTitle</h2>
+
+<hr>
+
+<h4>@_consultingSectionTitle</h4>
+
+<section class="margin-left-6">
+<div>
+    <WorkRoleDetailV2 Role=@(bbmRole) />
+    
+    <section class="margin-left-6">
+    <h5>@_mandatesTitle</h5>
+    <p>
+        @_mandatesSubtitle
+    </p>
+    <div>
+        <WorkRoleInAccordion Roles=@(consultingRoles) />
+    </div>
+    </section>
+</div>
+</section>
+<hr>
+ <h4> @_systemsIntegrationSectionTitle </h4>
+<section class="margin-left-6">
+    <WorkRoleDetailV2 Role=@(mckessonRole) />
+</section>
+
+<hr />
+<h4> @_laboratoryServicesSectionTitle </h4>
+
+@foreach (var role in laboratoryRoles)
+{
+    <section class="margin-left-6">
+    <WorkRoleDetailV2 Role=@(role) />
+    </section>
+}
+
+<hr />
+
+<h4> @_healthCareSectionTitle </h4>
+@foreach (var role in patientCareRoles)
+{
+    <section class="margin-left-6">
+    <WorkRoleDetailV2 Role=@(role) />
+    </section>
+}
+
+
+
+@code {
+
+    [Parameter]
+    public string Language { get; set; } = Constants.English;
+
+    private string _pageTitle;
+    string _consultingSectionTitle;
+    string _mandatesTitle;
+    string _mandatesSubtitle;
+    string _systemsIntegrationSectionTitle;
+    string _healthCareSectionTitle;
+    string _laboratoryServicesSectionTitle;
+    private WorkRoleInterpretor? mckessonRole;
+    private WorkRoleInterpretor? bbmRole;
+    private List<WorkRoleInterpretor>? patientCareRoles;
+    private List<WorkRoleInterpretor>? laboratoryRoles;
+    private List<WorkRoleInterpretor>? consultingRoles;
+
+    protected override void OnInitialized()
+    {
+
+        var listPatientCareRoles = _yamlDeserializer.GetPatientCareRoles();
+        patientCareRoles = listPatientCareRoles.OrderByDescending(i => i.EndDate ?? DateTime.Now).Select(r => new WorkRoleInterpretor(r, _language)).ToList();
+        var listLaboratoryRoles = _yamlDeserializer.GetLaboratoryRoles();
+        laboratoryRoles = listLaboratoryRoles.OrderByDescending(i => i.EndDate ?? DateTime.Now).Select(r => new WorkRoleInterpretor(r, _language)).ToList();
+
+        bbmRole = new WorkRoleInterpretor(_yamlDeserializer.GetBBMRole(), _language);
+        consultingRoles = _yamlDeserializer.GetMandates()
+                    .OrderByDescending(i => i.EndDate ?? DateTime.Now).Select(r => new WorkRoleInterpretor(r, _language)).ToList();
+        mckessonRole = new WorkRoleInterpretor(_yamlDeserializer.GetMcKessonRole(), _language);
+
+
+        _pageTitle = (_language.Current == Constants.French) ? "Expérience" : "Experience";
+        _consultingSectionTitle = (_language.Current == Constants.French) ? "Consultant en technologies de l'information" : "Information Technology Consulting";
+        _mandatesTitle = (_language.Current == Constants.French) ? "Mandats" : "Mandates";
+        _mandatesSubtitle = (_language.Current == Constants.French) ? "Cliquez sur les mandats ci-dessous pour plus de détails." : "Click on the mandates below for more detail.";
+        
+        _systemsIntegrationSectionTitle = (_language.Current == Constants.French) ? "Intégration de systèmes dans les soins de santé" : "Systems Integration in Healthcare";
+        _healthCareSectionTitle = (_language.Current == Constants.French) ? "Services de santé d'urgence" : "Emergency Healthcare Services";
+        _laboratoryServicesSectionTitle = (_language.Current == Constants.French) ? "Services de laboratoire clinique" : "Clinical Laboratory Services";
+    
+    }
+}

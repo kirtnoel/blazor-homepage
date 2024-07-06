@@ -1,0 +1,58 @@
+﻿@page "/cloudcerts"
+@inject Language _language
+@inject YamlDeserializer _yamlDeserializer
+
+<div class="row mt-5">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>@CertificationHeader</th>
+                <th>@YearsExperienceHeader</th>
+                <th>@CompetencyHeader</th>
+                <th>@DateHeader</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in cloudCertifications.ToList().OrderBy(c => c.Rating.En).ThenByDescending(e => e.Years).ThenBy(s => s.Label))
+            { 
+                <tr>
+                    <td>@(_language.Current == Constants.English ? @i.Title.En : @i.Title.Fr) </td>
+                    <td>@i.Years </td>
+                    <td>@(_language.Current == Constants.English ? @i.Rating.En : @i.Rating.Fr)</td>
+                    <td>@i.CertificationDate?.ToString("yyyy MMMM")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code{
+
+    private List<CloudCertifications> cloudCertifications = new List<CloudCertifications>();
+    public required string CertificationHeader { get; set; }
+    public required string YearsExperienceHeader { get; set; }
+    public required string CompetencyHeader { get; set; }
+    public required string DateHeader { get; set; }
+
+    protected override void OnInitialized()
+    {
+
+        cloudCertifications = _yamlDeserializer.GetCloudCertifcations();
+        if (_language.Current == Constants.French )
+        {
+            CertificationHeader = "Certifications Infonuagique";
+            YearsExperienceHeader = "Années d'expérience";
+            CompetencyHeader = "Niveau de compétence";
+            DateHeader = "Date certifié";
+        }
+        else
+        {
+            CertificationHeader = "Cloud Certification";
+            YearsExperienceHeader = "Years of Experience";
+            CompetencyHeader = "Competency Level";
+            DateHeader = "Date Certified";
+        }
+    }
+
+
+}

@@ -1,0 +1,56 @@
+﻿-
+ # Title: 
+ #   En: Full Stack Developer
+ #   Fr: Développeur Full Stack
+ # Organization: 
+ #   En: Bell Business Markets
+ #   Fr: Bell Marché Affaires
+  Id: BBM-INNOVAC
+  Mandate:
+    En: Revenue Québec
+    Fr: Revenu Québec
+  Team:
+    En: Innovation and Continuous Improvement (INNOVAC)
+    Fr: Innovation et amélioration continue (INNOVAC)
+  Location: 
+    En: Québec, Québec (hybrid)
+    Fr: Québec, Québec (hybride)
+  StartDate: "2023-03-01"
+  EndDate: "2023-11-01"
+  Description:
+    En: "Member of the Innovation and Continuous Improvement team (INNOVAC) which explores and implements modern software development practices. Our knowledge is leveraged in efforts to modernize legacy solutions and in the design, implementation and deployment of new solutions."
+    Fr: "Membre de l'équipe d'innovation et d'amélioration continue (INNOVAC) qui explore et met en œuvre des pratiques modernes de développement de logiciels. Nos connaissances sont mises à profit dans les efforts de modernisation des solutions héritées et dans la conception, la mise en œuvre et le déploiement de nouvelles solutions."
+  Activities:
+    - 
+      En: "Maintain and enhance containerized solution using docker, docker compose and Kubernetes"
+      Fr: "Maintenir et améliorer des applications conteneurisées à l'aide de docker, docker compose et de Kubernetes"
+    - 
+      En: "Transition from legacy .NET MVC API controllers to .NET Minimal APIs"
+      Fr: "Transition des contrôleurs d'API .NET MVC hérités vers les API minimales .NET"
+    -
+      En: "Azure DevOps - update yaml pipeline definitions to improve readability and maintainability"
+      Fr: "Créer et entretenir des pipelines sur Azure DevOps basés sur des définitions yaml"
+    - 
+      En: "Configure and develop in GitHub Codespaces - containerized development environment"
+      Fr: "Configurer et développer dans GitHub Codespaces - environnement de développement conteneurisé"
+    - 
+      En: "Enhance automated unit and integration tests"
+      Fr: "Améliorer les tests unitaires et d'intégration automatisés"
+    - 
+      En: "Generate code coverage reports with dotnet tools"
+      Fr: "Générer des rapports de couverture de code avec des outils dotnet"
+    - 
+      En: "Use GitHub for managing source code using the feature branch workflow"
+      Fr: "Utiliser GitHub pour gérer le code source avec le workflow de branche de fonctionnalité"
+    - 
+      En: "Keycloak Identity Server - create a baseline configuration to control access to a web API"
+      Fr: "Keycloak Identity Server - créer une configuration de base pour contrôler l'accès à une API Web"
+    - 
+      En: "Documentation as code - compare and contrast documentation tools best suited for an Angular frontend"
+      Fr: "Documentation en tant que code - comparer et contraster les outils de documentation les mieux adaptés à une application Angulaire"
+    - 
+      En: "Perform code reviews to provide timely and constructive feedback"
+      Fr: "Effectuer des revues de code pour fournir des commentaires opportuns et constructifs"
+    - 
+      En: "Participate in sprint planning and daily scrums"
+      Fr: "Participer à la planification des sprints et aux mêlées quotidiennes"

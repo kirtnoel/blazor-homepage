@@ -1,0 +1,49 @@
+﻿-
+ # Title: 
+ #   En: Full Stack Developer
+ #   Fr: Développeur Full Stack
+ # Organization: 
+ #   En: Bell Business Markets
+ #   Fr: Bell Marché Affaires
+  Id: BBM-ACE
+  Mandate:
+    En: Revenue Québec
+    Fr: Revenu Québec
+  Team:
+    En: Test Case Acquisition
+    Fr: Acquisition des cas d'essaies
+  Location: 
+    En: Québec, Québec (hybrid)
+    Fr: Québec, Québec (hybride)
+  StartDate: "2023-12-01"
+  Description:
+    En: "Revenue Québec manages a substantial number of legacy systems, each supported by a database. The use-case acquisition team is responsible for supporting applications that facilitate preparation for validation integrating involving multiple systems.  In-house tools harvest and anonymize information across these various systems to enable efficient and repeatable preparation. Additionally, other test systems and their corresponding databases use this toolkit to facilitate the preparation of training environments. I am part of a team that continually enhances and improves this in-house toolkit."
+    Fr: "Revenue Québec gère un nombre substantiel de systèmes hérités, chacun étant pris en charge par une base de données. L’équipe d’acquisition des cas d’essaies est responsable de la prise en charge des applications qui facilitent la préparation pour la validation en intégrant plusieurs systèmes. Des outils internes collectent et anonymisent des informations provenant de ces différents systèmes pour permettre une préparation efficace et reproductible. De plus, d’autres systèmes de test et leurs bases de données correspondantes utilisent cette boîte à outils pour faciliter la préparation des environnements de formation. Je fais partie d’une équipe qui améliore continuellement cette boîte à outils interne."
+  Activities:
+    - 
+      En: "Develop and enhance a legacy application built on the .NET Framework"
+      Fr: "Développer et améliorer une application existante construite avec le .NET Framework"
+    - 
+      En: "Understand system design and processes to make sound decisions for fixing bugs or adding new features"
+      Fr: "Comprendre la conception du système et les processus pour prendre des décisions judicieuses pour corriger des bugs ou ajouter de nouvelles fonctionnalités"
+    -
+      En: "Perform systems integration using BMC Control-M and its REST API"
+      Fr: "Effectuer l'intégration de systèmes grâce à BMC Control-M et de son API REST"
+    - 
+      En: "Add new functionality using SOLID development principles"
+      Fr: "Ajouter de nouvelles fonctionnalités en utilisant les principes de développement SOLID"
+    - 
+      En: "Favour TDD to enhance testability and code coverage of new functionality"
+      Fr: "Favoriser TDD pour améliorer la testabilité et la couverture du code des nouvelles fonctionnalités"
+    - 
+      En: "Leverage updated test libraries to improve test set-up and enhance code coverage"
+      Fr: "Mettre à jour et exploiter les bibliothèques pour améliorer la configuration et la couverture du code des tests"
+    -
+      En: "Perform code reviews to provide constructive feedback"
+      Fr: "Effectuer des révisions de code pour fournir des commentaire constructifs"
+    - 
+      En: "Troubleshoot and investigate software bugs"
+      Fr: "Dépanner et enquêter sur les bogues logiciels"
+    - 
+      En: "Participate in sprint planning and daily scrums"
+      Fr: "Participer à la planification des sprints et aux mêlées quotidiennes"

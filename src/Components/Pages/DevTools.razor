@@ -1,0 +1,53 @@
+﻿@page "/devtools"
+@inject Language _language
+
+<div class="row mt-5">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@DevToolHeader</th>
+            <th>@YearsExperienceHeader</th>
+            <th>@CompetencyHeader</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach (var i in developmentTools?.OrderBy(c => c.Rating.En).ThenByDescending(e => e.Years).ThenBy(s => s.Label))
+{
+    <tr>
+        <td>@i.Label </td>
+        <td>@i.Years </td>
+        <td>@(_language.Current == Constants.English ? @i.Rating.En : @i.Rating.Fr)</td>
+    </tr>
+}
+    </tbody>
+</table>
+</div>
+
+
+@code{
+
+    public required string DevToolHeader { get; set; }
+    public required string YearsExperienceHeader { get; set; }
+    public required string CompetencyHeader { get; set; }
+
+    private List<SkillSet>? developmentTools = new List<SkillSet>();
+    protected override void OnInitialized()
+    {
+        var yamlDeserializer = new YamlDeserializer();
+        developmentTools = yamlDeserializer.GetDevTools();
+
+        if (_language.Current == Constants.French)
+        {
+            DevToolHeader = "Outils de développement";
+            YearsExperienceHeader = Constants.YearsExperienceHeaderFrench;
+            CompetencyHeader = Constants.CompetencyHeaderFrench;
+        }
+        else
+        {
+            DevToolHeader = "Development Tools";
+            YearsExperienceHeader = Constants.YearsExperienceHeaderEnglish;
+            CompetencyHeader = Constants.CompetencyHeaderEnglish;
+        }
+    }
+
+}

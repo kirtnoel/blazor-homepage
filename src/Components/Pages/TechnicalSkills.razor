@@ -1,0 +1,28 @@
+﻿@page "/technicalskills"
+@using System.Globalization
+@inject Language _language
+
+<PageTitle>@pageTitle</PageTitle>
+
+<h2>@pageTitle</h2>
+
+<hr>
+
+<CloudCerts />
+<Programming />
+<DevTools />
+
+@code{
+    private string pageTitle;
+    protected override void OnInitialized()
+    {   
+        if (_language.Current == Constants.French)
+        {
+            pageTitle = "Compétences Techniques";
+        }
+        else
+        {
+            pageTitle = "Technical Skills";
+        }
+    }
+}    

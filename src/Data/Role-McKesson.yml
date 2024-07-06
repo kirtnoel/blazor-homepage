@@ -1,0 +1,44 @@
+﻿
+Id: McK
+Title: 
+  En: Senior Technical Engineer
+  Fr: Ingénieur Technique Senior
+Organization: 
+  En: Change Healthcare (formerly McKesson Medical Imaging Group)
+  Fr: Change Healthcare (auparavant McKesson Medical Imaging Group)
+Location: 
+  En: Richmond, Canada; Dublin, Ireland; Québec City, Canada
+  Fr: Richmond, Canada; Dublin, Irlande; Québec, Canada
+StartDate: "2007-02-01"
+EndDate: "2019-07-01"
+Activities:
+  - 
+    En: "Successfully deployed a Radiology Information Systems in a wide variety of healthcare organizations."
+    Fr: "Mettre en œuvre avec succès un système d’information en radiologie dans une grande variété d'organisations hospitalières aux États-Unis, au Canada et en Irlande."
+  -
+    En: "Implemented an HL7 integration engine for Ireland's national radiology system without disrupting on-going services."
+    Fr: "Mise en œuvre d'un agent d'intégration HL7 au sein du système national de radiologie irlandais sans perturber les services en cours."
+  -
+    En: "Developed and deployed a database solution to stage health information for a data warehouse."
+    Fr: "Développer et activer une solution de base de données pour capturer l’information de santé pour un entrepôt de données."
+  -
+    En: "Migrated patient reports from legacy solutions to the McKesson RIS"
+    Fr: "Migrer les rapports de radiologie des solutions héritées vers le RIS de McKesson"
+  -
+    En: "Developed a solution to verify and migrate scanned documents using parallelization."
+    Fr: "Développer une solution pour vérifier et migrer les documents numérisés en utilisant une méthode de parallélisation."
+  -   
+    En: "Engaged and collaborated with clients in systems integration testing forums."
+    Fr: "Collaborer avec les clients pour effectuer des tests d'intégration des systèmes."
+  -
+    En: "Created and presented integration solutions to technical and non-technical audiences alike."
+    Fr: "Créer et présenter des solutions d'intégration pour les audiences non techniques et techniques."
+  -
+    En: "Led workshops for colleagues to improve their SQL skills."
+    Fr: "Former et diriger des ateliers pour aider les collègues à améliorer leurs compétences SQL."
+  -
+    En: "Verified and deployed complex configurations in high volume high availability environments."
+    Fr: "Vérifier et déployer des configurations complexes dans des systèmes de production à haute disponibilité."
+  -
+    En: "Assist support team to resolve complex tickets."
+    Fr: "Soutenir l'équipe d’entretien dans la résolution de problèmes complexes."

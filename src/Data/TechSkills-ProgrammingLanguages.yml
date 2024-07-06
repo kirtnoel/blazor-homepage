@@ -1,0 +1,43 @@
+
+- 
+  Label: .NET, C#
+  Years: 7
+  Rating:
+    En: Advanced
+    Fr: Avancé
+- 
+  Label: Powershell
+  Years: 3
+  Rating: 
+    En: Intermediate
+    Fr: Intermédiaire
+- 
+  Label: Java
+  Years: 2
+  Rating:
+    En: Intermediate
+    Fr: Intermédiaire
+-
+  Label: T-SQL
+  Years: 5
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+-   
+  Label: SQL
+  Years: 13
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+-
+  Label: YAML
+  Years: 3
+  Rating: 
+    En: Advanced
+    Fr: Avancé
+-
+  Label: tcl
+  Years: 5
+  Rating: 
+    En: Advanced
+    Fr: Avancé
