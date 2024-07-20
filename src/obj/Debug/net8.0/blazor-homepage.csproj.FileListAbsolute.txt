@@ -1,7 +1,0 @@
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.csproj.AssemblyReference.cache
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.AssemblyInfoInputs.cache
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.AssemblyInfo.cs
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.csproj.CoreCompileInputs.cache
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\kirt.noel\source\repos\blazor-homepage\src\obj\Debug\net8.0\blazor-homepage.sourcelink.json
