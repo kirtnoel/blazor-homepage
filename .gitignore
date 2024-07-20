@@ -5,4 +5,6 @@
 /.vs/
 /.vs/blazor-homepage/v17/
 /src/obj/
+/src/bin/
 /tests/TestProject/obj/
+/tests/TestProject/bin/
